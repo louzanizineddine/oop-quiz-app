@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="final"></div>
+
+    <div class="quiz" style="display: none">
+        <div class="count">
+            <p class="current">0</p>
+            <p class=""></p>
+            <p class="total">/</p>
+        </div>
+        <div id="questions">
+            <label></label>
+            <label></label>
+            <label></label>
+            <label></label>
+        </div>
+    </div>
+    <div class="settings">
+        <h2>Quiz settings</h2>
+        <label for="category">Select category</label>
+        <select name="" id="category">
+            <option value="9">Genral Questions</option>
+            <option value="27">Animals</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+        </select>
+
+        <div>
+            <label for="difficulty">Difficulty</label>
+            <label for="easy">
+                <input type="radio" id="easy">easy
+            </label>
+            <label for="medium">
+                <input type="radio" id="medium">medium
+            </label>
+            <label for="hard">
+                <input type="radio" id="hard">hard
+            </label>
+        </div>
+
+        <div>
+            <label for="nQuestions">Number of questions</label>
+            <input type="number" id="nQuestions">
+        </div>
+
+        <button id="startBtn" class="submit">Start Quiz</button>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
